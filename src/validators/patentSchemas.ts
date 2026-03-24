@@ -13,9 +13,11 @@ export const basicSearchSchema = z.object({
   sort: z.enum(["asc", "desc"]).default("desc"),
 });
 
-export const advancedSearchSchema = basicSearchSchema.extend({
-  inventionTitle: z.string().max(500).optional(),
-  registerStatus: z
-    .enum(["공개", "취하", "소멸", "포기", "무효", "거절", "등록"])
-    .optional(),
-});
+export const advancedSearchSchema = basicSearchSchema
+  .extend({
+    applicant: z.string().min(1).max(200).optional(),
+    inventionTitle: z.string().max(500).optional(),
+    registerStatus: z
+      .enum(["공개", "취하", "소멸", "포기", "무효", "거절", "등록"])
+      .optional(),
+  });
