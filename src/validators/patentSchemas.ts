@@ -20,4 +20,15 @@ export const advancedSearchSchema = basicSearchSchema
     registerStatus: z
       .enum(["공개", "취하", "소멸", "포기", "무효", "거절", "등록"])
       .optional(),
+  })
+  .superRefine((data, ctx) => {
+    const hasAny =
+      data.applicant || data.inventionTitle || data.registerStatus || data.startDate || data.endDate;
+    if (!hasAny) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: "검색 조건을 하나 이상 입력하세요",
+        path: ["applicant"],
+      });
+    }
   });
