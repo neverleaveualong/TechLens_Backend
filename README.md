@@ -8,6 +8,8 @@
 - 공통 기술 문서: [TechLens Docs](https://github.com/Douzone-Keycom-Internship-woohyun-2025/Docs)
 - 데모: [TechLens 서비스](https://techlens-app.vercel.app/login)
 
+![TechLens 서비스 화면](https://raw.githubusercontent.com/Douzone-Keycom-Internship-woohyun-2025/Frontend/main/public/screenshots/02_home.png)
+
 > KIPRIS 특허 데이터를 서비스에 필요한 형태로 가공하고, 인증·검색·분석·사용자 데이터를 일관된 REST API로 제공합니다.
 
 ## 목차
@@ -259,3 +261,7 @@ src/
 
 - 본 프로젝트의 코드와 문서는 심우현의 포트폴리오 및 기술 검토 목적으로 관리합니다.
 - 기업 협업 산출물의 권리와 사용 범위는 별도 협의와 원본 계약을 우선합니다.
+
+<p align="center">
+  <img width="180" alt="KICOM 로고" src="https://github.com/user-attachments/assets/3e8b41ac-733c-499a-b49b-bf32eee18ad8" />
+</p>
